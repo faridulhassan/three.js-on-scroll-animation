@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin-top: 0;
+}
+html {
+  font-size: 18px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1a20;
+  color: #fff;
+}
+
+section {
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+}
+section:not(:last-of-type) {
+  border-bottom: 1px solid #8d8d8d;
+}
+section > div {
+  width: 50%;
+}
+section:nth-of-type(even) {
+  justify-content: flex-end;
+}
+section h2 {
+  font-size: 50px;
+}
+section {
+  font-size: 25px;
+}
+
+/* Canvas */
+#canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
